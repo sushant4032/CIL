@@ -1,2 +1,2 @@
 # CIL
-A responsive and fast website design for CIL
+A responsive website for CIL
