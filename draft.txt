@@ -1,0 +1,43 @@
+////////// image-slider
+<div class="hero">
+<img src="res/cover/img (3).jpg" alt="">                  
+</div>
+
+div.hero {
+	width: 100%;
+	height: 500px;
+	/* background:url('res/cover/img\ \(1\).jpg'); */
+}
+
+div.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+
+
+let hero_image_no = 1;
+
+setInterval(() => {
+    const path = `res/cover/img-${hero_image_no}.jpg`;
+    const hero = select('div.hero img');
+    console.dir(hero);
+    hero.src = path;
+    console.log(hero);
+    // console.log(hero_image_no);
+    if (hero_image_no == 6) {
+        hero_image_no = 1;
+    }
+    else {
+        hero_image_no++;
+    }
+},1000)
+
+
+colors ////////////////
+
+silver : #eff3f6;
+pale-yellow : #ffeb3b30
+dark : #071726
+blue : #4d81f7
+

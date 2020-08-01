@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	/* color: #444; */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input,
+textarea,
+p {
+	-webkit-touch-callout: default;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1rem;
+}
+
+body {
+	background: #fff;
+}
+
+button{
+    padding:0.6rem 1.2rem;
+    font-size:1rem;
+    background:#4d81f7;
+    color:white;
+    
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+      background:#3a5fb4;
+    
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+button:focus{
+    outline: none;
+}

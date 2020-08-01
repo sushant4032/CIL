@@ -4,21 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <script src="display.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/generic.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!-- <script src="js/main.js" defer></script> -->
+    <script src="js/display.js" defer></script>
     <title>CIL</title>
 </head>
 
 <body>
-    <div class="frame">
-        <header>
-
-            <div class="logo">
-                <img id="logo-image" src="Img/logo.svg" alt="cil logo" width="100px" height="200px">
-            </div>
-        </header>
-        <nav>
+    <header>
+        <div class="logo">
+            <img id="logo-image" src="res/logo.svg" alt="cil logo" width="100px" height="200px">
+        </div>
+        <nav class="main">
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -30,21 +29,47 @@
                 <li>Media</li>
             </ul>
         </nav>
-        <aside>
-            <ul>
-                <li>item-1</li>
-                <li class="selected">item-2</li>
-                <li>itme-3</li>
-                <li>item-4</li>
-                <li>item-5</li>
-            </ul>
-        </aside>
-        <main>
+    </header>
+    <main>
+        <div class="home">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Coal India Limited</h1>
+                    <p>Global leader in coal production. A government of India undertaking company.</p>
+                    <button class="pill">
+                        Learn more about us
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="res/cover-3.png" alt="">
+                </div>
+            </div>
+            <div class="mission-vision">
+                <div class="mission-image">
+                    <img src="res/mission.svg" alt="">
+                </div>
+                <div class="mission-text">
+                    <h1>Mission</h1>
+                    <p>To produce and market the planned quantity of coal and coal products efficiently and
+                        economically in an eco-friendly manner with due regard to safety, conservation and quality.
+                    </p>
 
+                </div>
+                <div class="vision-image">
+                    <img src="res/vision.svg" alt="">
+                </div>
+                <div class="vision-text">
+                    <h1>Vision</h1>
+                    <p>To emerge as a global player in the primary energy sector committed to provide energy
+                        security to the country by attaining environmentally and socially sustainable growth through
+                        best practices from mine to market.</p>
+                </div>
+            </div>
+     
+        </div>
 
-        </main>
-        <footer></footer>
-    </div>
+    </main>
+    <footer></footer>
 
 </body>
 
