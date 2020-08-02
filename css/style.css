@@ -118,7 +118,8 @@ footer {
 
 .hero {
 	width:100%;
-	height: 100vh;
+	height: 90vh;
+	padding:2rem;
 	display: flex;
 	/* background-image: linear-gradient(90deg, #ffff0036 0%, #ffffff 100%); */
 }
@@ -146,7 +147,7 @@ footer {
 	/* width:auto; */
 	object-fit: cover;
 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) */
-	border-radius: 0 0 0 100px;
+	border-radius: 0 0 0px 50px;
 }
 
 .hero-text h1 {
@@ -243,6 +244,5 @@ footer {
 	color: #666;
 }
 
-.alternate {
-	
-}
+
+
