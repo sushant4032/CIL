@@ -31,33 +31,52 @@ a {
 
 html {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 1rem;
+	font-size: 1vw;
 }
 
 body {
 	background: #fff;
+	min-width: 360px;
 }
 
-button{
-    padding:0.6rem 1.2rem;
-    font-size:1rem;
-    background:#4d81f7;
-    color:white;
-    
-    border:none;
-    border-radius: 3px;
-    cursor: pointer;
+section{
+	padding:2rem 1rem;
 }
 
-button:hover{
-      background:#3a5fb4;
-    
+img{
+	max-width:100%;
+	max-height:100%;
+	object-fit: scale-down;
 }
 
-button:active{
-    transform: scale(0.98);
+
+.container{
+	max-width:1200px;
+	margin:auto;
 }
 
-button:focus{
-    outline: none;
+
+
+button {
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	background: #4d81f7;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
 }
+
+button:hover {
+	background: #3a5fb4;
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+button:focus {
+	outline: none;
+}
+
+

@@ -1,5 +1,3 @@
-
-
 header {
 	width: 100%;
 	height: 7vh;
@@ -8,48 +6,51 @@ header {
 	top: 0px;
 
 	/* margin-bottom: 2rem; */
-	padding: 0.5rem;
 	background: #fff;
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
+
+	/* border-bottom: 1px solid #f4f4f4; */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.logo {
 	height: 100%;
+	padding: 0.25rem;
 }
 
 #logo-image {
 	height: 100%;
 }
 
-nav.main {
+nav {
 	flex-grow: 1;
 	justify-self: flex-end;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	align-items: flex-end;
-	overflow: auto;
+	align-items: stretch;
+	/* background:red; */
 }
 
 nav ul {
 	display: flex;
+	/* background:yellow; */
 }
 
 nav ul li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0px 0.15rem;
-	padding: 0.5rem 1rem;
+	margin: 0 1rem;
+	padding: 0 0.5rem;
 	cursor: pointer;
 	font-size: 1.2rem;
-	text-emphasis: 300;
-	border-radius: 10px 10px 0px 0px;
 	color: #444;
-	border-bottom: 5px solid transparent;
+	border: solid;
+	border-width: 4px 0 4px 0;
+	border-color: transparent;
 }
 
 nav li:hover {
@@ -57,17 +58,15 @@ nav li:hover {
 }
 
 nav li.selected {
-	border-bottom: none;
 	background: #fff;
 	color: purple;
-	border-bottom: 5px solid;
+	border-bottom-color: currentColor;
 }
 
 main {
-	width:100%;
+	width: 100%;
 	min-height: 80vh;
 	padding-top: 10vh;
-
 }
 
 aside {
@@ -107,142 +106,98 @@ aside li.selected {
 	border-color: #444;
 }
 footer {
-	width:100%;
+	width: 100%;
 	height: 5vh;
 	background: #ccc;
 }
 
-.home{
-	width:100%;
+.home {
+	width: 100%;
 }
 
 .hero {
-	width:100%;
-	height: 90vh;
-	padding:2rem;
-	display: flex;
+	width: 100%;
+	height: 80 vh;
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+	grid-template-rows: repeat(3, 33%);
+	/* background:#002f3c; */
+
 	/* background-image: linear-gradient(90deg, #ffff0036 0%, #ffffff 100%); */
 }
 
 .hero-text {
-	height: 100%;
-	width: 40%;
-	padding: 5rem 1rem;
-
+	grid-row: 1/-1;
+	grid-column: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-image {
-	height: 100%;
-	/* width: 70%; */
+	grid-row: 1/-1;
+	grid-column: 2/-1;
+	display: grid;
+	place-items: center;
 }
 
 .hero-image img {
-	width:100%;
-	max-height: 100%;
-	/* width:auto; */
+	width: 100%;
+	height: auto;
 	object-fit: cover;
 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) */
 	border-radius: 0 0 0px 50px;
 }
 
-.hero-text h1 {
+.hero h1 {
 	font-size: 5rem;
-	color: #353535;
+	color: #444;
 	text-align: center;
 }
 
-.hero-text p {
+.hero p {
+	margin: 2rem 0;
 	width: 80%;
 	font-size: 2rem;
 	color: #5e5d5d;
 	text-align: center;
 }
 
-.mission-vision {
-	width: 100%;
-	margin-top: 1rem;
-	padding: 1rem;
+.mission-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-
-	background: #ffeb3b30;
+	grid-template-columns: 50% 50%;
+}
+.vision-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
-.mission-image {
-	grid-row: 1 / 2;
-	grid-column: 1 /2;
-	/* background:#444; */
+.mission-container div,
+.vision-container div {
+	padding: 1rem;
 }
 
-.mission-text {
-	grid-row: 1;
-	grid-column: 2;
-}
-.vision-image {
-	grid-row: 2/3;
-	grid-column: 2/3;
+.mission h1,
+.vision h1 {
+	font-size: 5rem;
+	color: #4d81f7;
 }
 
+.mission p,
+.vision p {
+	color: #444;
+	font-size: 1.5rem;
+	line-height: 150%;
+	text-align: justify;
+}
+
+.mission-text,
 .vision-text {
-	grid-row: 2;
-	grid-column: 1;
-}
-
-.mission-vision div {
-	padding: 2rem;
 	display: flex;
 	flex-direction: column;
+	align-items: stretch;
 	justify-content: center;
-	align-items: center;
 }
-
-.mission-vision img {
-	max-height: 100%;
-	max-width: 100%;
-	object-fit: scale-down;
-}
-
-.mission-text h1 {
-	width: 100%;
-	font-size: 5rem;
-	font-weight: bold;
-	text-align: left;
-	color: #1d83d5;
-	/* border-bottom: 0.5rem solid; */
-	margin-bottom: 1rem;
-}
-
-.mission-text p {
-	width: 100%;
-	font-size: 1.5rem;
-	line-height: 150%;
-	text-align: justify;
-	color: #666;
-}
-
-.vision-text h1 {
-	width: 100%;
-	font-size: 5rem;
-	font-weight: bold;
-	text-align: right;
-	color: #f5a947;
-	/* border-bottom: 0.5rem solid; */
-	margin-bottom: 1rem;
-}
-
-.vision-text p {
-	width: 100%;
-	font-size: 1.5rem;
-	line-height: 150%;
-	text-align: justify;
-	color: #666;
-}
-
-
-
