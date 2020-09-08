@@ -1,18 +1,21 @@
 header {
-	width: 100%;
-	height: 7vh;
+	height: 60px;
 
-	position: fixed;
-	top: 0px;
+	/* position: fixed; */
+	/* top: 0px; */
 
-	/* margin-bottom: 2rem; */
-	background: #fff;
+	background: rgb(255, 255, 255, 0.9);
 	display: flex;
-	justify-content: flex-start;
-	align-items: stretch;
 
-	/* border-bottom: 1px solid #f4f4f4; */
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-bottom: 1px ridge lightred;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	/* background:linear-gradient(270deg, #e2ff00 0%,#ffffff 100% ); */
+	/* background: teal; */
+}
+
+main {
+	width: 900px;
+	margin: auto;
 }
 
 div.logo {
@@ -28,10 +31,8 @@ nav {
 	flex-grow: 1;
 	justify-self: flex-end;
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-end;
-	align-items: stretch;
-	/* background:red; */
+	align-items: center;
 }
 
 nav ul {
@@ -43,25 +44,28 @@ nav ul li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 1rem;
-	padding: 0 0.5rem;
+	margin: 0 10px;
+	padding: 5px 20px;
 	cursor: pointer;
 	font-size: 1.2rem;
-	color: #444;
-	border: solid;
-	border-width: 4px 0 4px 0;
-	border-color: transparent;
+	color: #666;
+
+	border-radius: 50px;
+	overflow: hidden;
 }
 
 nav li:hover {
-	color: gold;
+	/* color: gold; */
+	color:#222;
+
 }
 
 nav li.selected {
-	background: #fff;
-	color: purple;
-	border-bottom-color: currentColor;
+	background: purple;
+	color: white;
 }
+
+
 
 main {
 	width: 100%;
@@ -116,19 +120,16 @@ footer {
 }
 
 .hero {
-	width: 100%;
 	height: 80 vh;
 	padding: 2rem;
 	display: grid;
-	grid-template-columns: repeat(3, 33%);
-	grid-template-rows: repeat(3, 33%);
+	grid-template-columns: 40% 60%;
 	/* background:#002f3c; */
 
 	/* background-image: linear-gradient(90deg, #ffff0036 0%, #ffffff 100%); */
 }
 
 .hero-text {
-	grid-row: 1/-1;
 	grid-column: 1;
 	display: flex;
 	flex-direction: column;
@@ -138,7 +139,6 @@ footer {
 }
 
 .hero-image {
-	grid-row: 1/-1;
 	grid-column: 2/-1;
 	display: grid;
 	place-items: center;
